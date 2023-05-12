@@ -19,5 +19,5 @@ def can_make_pasta(ingredients):
         else:
             return False
 
-ingredients = [ "apple", "orange", "flour", "eggs", "oil"]
+ingredients = ["apple", "orange", "flour", "eggs", "oil"]
 print(can_make_pasta(ingredients))
