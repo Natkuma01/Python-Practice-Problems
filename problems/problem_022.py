@@ -7,4 +7,15 @@
 #     "surfboard"
 
 def gear_for_day(is_workday, is_sunny):
-    pass
+    need_to_bring = []
+    if is_sunny == False and is_workday == True:
+        need_to_bring.append("umberalla")
+    if is_workday == True:
+        need_to_bring.append("laptop")
+    if is_workday == False:
+        need_to_bring.append("surfboard")
+    return need_to_bring
+
+is_workday = True
+is_sunny = True
+print(gear_for_day(is_workday, is_sunny))
