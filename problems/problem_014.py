@@ -11,4 +11,13 @@
 # problem to get a good feel for how to solve it.
 
 def can_make_pasta(ingredients):
-    pass
+    for ingredient in ingredients:
+        if ingredient == "flour":
+            if ingredient == "eggs":
+                if ingredient == "oil":
+                    return True
+        else:
+            return False
+
+ingredients = [ "apple", "orange", "flour", "eggs", "oil"]
+print(can_make_pasta(ingredients))
