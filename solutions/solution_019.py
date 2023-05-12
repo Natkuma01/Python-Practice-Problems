@@ -28,3 +28,4 @@ def is_inside_bounds(x, y, rect_x, rect_y, rect_width, rect_height):
     else:                                               # solution
         return False                                    # solution
     # pass                                              # problem
+
