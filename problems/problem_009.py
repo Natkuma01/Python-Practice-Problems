@@ -12,5 +12,13 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
 def is_palindrome(word):
-    pass
+    reversed_word = word[::-1]
+    if word == reversed_word:
+        return True
+    else:
+        return False
+
+word = "htrydfh"
+print(is_palindrome(word))
