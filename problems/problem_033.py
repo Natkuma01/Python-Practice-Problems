@@ -16,4 +16,11 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_even_numbers(n):
-    pass
+    if n < 0:
+        return None
+    result = 0
+    for num in range(n+1):
+        result += num*2
+    return result
+n = 5
+print(sum_of_first_n_even_numbers(n))
