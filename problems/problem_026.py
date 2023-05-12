@@ -12,5 +12,21 @@
 #     and less than 70
 #   * An "F" for any other average
 
+from statistics import mean
+
 def calculate_grade(values):
-    pass
+    avg = mean(values)
+    if avg >= 90:
+        return "A"
+    elif 90 > avg >= 80:
+        return "B"
+    elif 80 > avg >= 70:
+        return "C"
+    elif 60 > avg >= 70:
+        return "D"
+    else:
+        return "F"
+
+
+values = [81, 50, 88, 89]
+print(calculate_grade(values))
