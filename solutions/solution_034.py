@@ -40,3 +40,5 @@ def count_letters_and_digits(s):
     # return number of letters, number of digits
     return num_letters, num_digits                      # solution
     # pass                                              # problem
+s = "1a"
+print(count_letters_and_digits(s))
