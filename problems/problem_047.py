@@ -13,4 +13,25 @@
 # like ".isalpha", ".isdigit", ".isupper", and ".islower"
 
 def check_password(password):
-    pass
+    length = lower = upper = digit = special_char = False
+
+    if 6 <= (len(password)) <= 12:
+        length = True
+
+        for letter in password:
+            if  letter.islower():
+                lower = True
+            elif letter.isupper():
+                upper = True
+            elif letter.isdigit():
+                digit = True
+            elif letter =="$" or letter =="@" or letter == "!":
+                special_char = True
+
+    if length and lower and upper and digit and special_char:
+        return "Valid password"
+    else:
+        return "invalid password"
+
+password = "Nata12ur"
+print(check_password(password))
