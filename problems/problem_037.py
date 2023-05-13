@@ -24,4 +24,12 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    new_string = ""
+    result = (length - len(str(number)))*pad
+    new_string = result + str(number)
+    return new_string
+
+number = 19
+length = 5
+pad = " "
+print(pad_left(number, length, pad))
