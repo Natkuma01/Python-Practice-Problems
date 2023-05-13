@@ -28,4 +28,15 @@
 # at the last one you just wrote unless you really must.
 
 def make_sentences(subjects, verbs, objects):
-    pass
+    result = []
+    for subject in subjects:
+        for verb in verbs:
+            for object in objects:
+                sentence = f"{subject} {verb} {object}"
+                result.append(sentence)
+    return result
+
+subjects = ["I", "You"]
+verbs = ["play", "watch"]
+objects = ["Portal", "Sable"]
+print(make_sentences(subjects, verbs, objects))
