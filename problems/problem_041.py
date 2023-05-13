@@ -21,4 +21,18 @@
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
-    pass
+    result = []
+    for item in csv_lines:
+        piece = item.split(",")
+        a = 0
+        for num in piece:
+            a = int(num) + a
+        result.append(a)
+    return result
+
+
+
+
+
+csv_lines = ["8,1,7", "10,10,10", "1,2,3"]
+print(add_csv_lines(csv_lines))
