@@ -17,3 +17,7 @@
 
 def num_concat(m, n):           # solution
     return str(m) + str(n)      # solution
+
+m = 3
+n = 10
+print(num_concat(m, n))

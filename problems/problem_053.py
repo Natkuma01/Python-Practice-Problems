@@ -14,4 +14,13 @@
 #      returns: "basia.farid"
 #    * input:   "basia_farid+test@yahoo.com"
 #      returns: "basia_farid+test"
+def username_from_email(address):
+    username=""
+    result = []
+    x = address.split("@")
+    result.append(x[0])
+    username = ''.join(map(str, result))
+    return username
 
+address = "basia.farid@yahoo.com"
+print(username_from_email(address))

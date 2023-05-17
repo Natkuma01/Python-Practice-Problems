@@ -20,4 +20,14 @@
 #
 # You may want to look at the built-in Python functions
 # "ord" and "chr" for this problem
+def shift_letters(word):
+    new_word = ""
+    for i in word:
+        x = ord(i)
+        y = chr(x+1)
+        new_word += y
+    return new_word
+
+word = "import"
+print(shift_letters(word))
 

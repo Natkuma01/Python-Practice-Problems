@@ -14,3 +14,4 @@ def safe_divide(numerator, denominator):        # noqa # solution
     if denominator == 0:                        # solution
         return math.inf                         # solution
     return numerator / denominator              # solution
+

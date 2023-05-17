@@ -16,4 +16,19 @@
 #       result: 97 because from 3 to 100 is the biggest gap
 #
 # You may want to look at the built-in "abs" function
+def biggest_gap(numbers):
+    # set biggest gap value as the difference btw first number and second number in the list
+    biggest_gap_value = abs(numbers[1] - numbers[0])
+    # iterate the index in the list, start from the second to the last number
+    for index in range(1, len(numbers)-1):
+    # set gap equal the difference btw two numbers
+        gap = abs(numbers[index+1] - numbers[index])
+    # if gap is greater than the biggest gap value
+        if gap > biggest_gap_value:
+    # set the biggest value equal to gap
+            biggest_gap_value = gap
+    # return to biggest gap value
+    return biggest_gap_value
 
+numbers = [1, 11, 9, 20, 0]
+print(biggest_gap(numbers))

@@ -18,3 +18,6 @@ def sum_fraction_sequence(n):           # solution
     for i in range(1, n + 1):           # solution
         sum += i / (i + 1)              # solution
     return sum                          # solution
+
+
+

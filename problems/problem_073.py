@@ -21,7 +21,24 @@
 #
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.scores = []
 
+    def add_score(self, score):
+        self.scores.append(score)
 
+    def get_average(self):
+        if len(self.scores) == 0:
+            return None
+        else:
+            return sum(self.scores)/ len(self.scores)
 
-
+student = Student("Malik")
+print(student.get_average())
+student.add_score(80)
+print(student.get_average())
+student.add_score(90)
+student.add_score(82)
+print(student.get_average())

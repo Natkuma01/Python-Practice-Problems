@@ -15,3 +15,14 @@
 #
 # https://docs.python.org/3/library/random.html
 
+import random
+
+def generate_lottery_numbers():
+    my_list = []
+
+    for i in range (6):
+        random_num = random.randint(1, 40)
+        my_list.append(random_num)
+    return my_list
+
+print(generate_lottery_numbers())
