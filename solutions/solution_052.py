@@ -15,12 +15,13 @@
 #
 # https://docs.python.org/3/library/random.html
 
-import random                                   # solution
+import secrets
+
                                                 # noqa # solution
 def generate_lottery_numbers():                 # noqa # solution
     numbers = []                                # solution
     while len(numbers) < 6:                     # solution
-        number = random.randint(1, 40)          # solution
+        number = secrets.SystemRandom().randint(1, 40)          # solution
         if number not in numbers:               # solution
             numbers.append(number)              # solution
     return numbers                              # solution
@@ -29,5 +30,5 @@ def generate_lottery_numbers():                 # noqa # solution
                                                 # noqa # solution
 def generate_lottery_numbers():                 # noqa # solution
     numbers = list(range(1, 41))                # solution
-    random.shuffle(numbers)                     # solution
+    secrets.SystemRandom().shuffle(numbers)                     # solution
     return numbers[0:6]                         # solution
